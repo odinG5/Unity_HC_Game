@@ -948,6 +948,49 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 184357413}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &233580285
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 233580287}
+  - component: {fileID: 233580286}
+  m_Layer: 0
+  m_Name: "\u7DF4\u7FD2\u7528\u7269\u4EF6"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &233580286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233580285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f0886b368c695e4eb77c721bd1b31bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &233580287
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233580285}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 170.35442, y: 130.17987, z: -8.280916}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &347693585
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9502,6 +9545,7 @@ GameObject:
   - component: {fileID: 1734463684}
   - component: {fileID: 1734463687}
   - component: {fileID: 1734463688}
+  - component: {fileID: 1734463689}
   m_Layer: 0
   m_Name: "\u5973\u5FCD\u8005"
   m_TagString: Untagged
@@ -9629,6 +9673,26 @@ CapsuleCollider2D:
   m_Offset: {x: 0.06217146, y: -0.19781828}
   m_Size: {x: 2.188757, y: 4.6235}
   m_Direction: 0
+--- !u!114 &1734463689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734463683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5fa2c55b9b761041ac3494b924d503f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 50
+  hp: 999.9
+  coin: 0
+  height: 500
+  soundJump: {fileID: 8300000, guid: 231bc8f26c2194240b97a6768f2e1d75, type: 3}
+  soundSlide: {fileID: 0}
+  soundHit: {fileID: 8300000, guid: 04100b428e78ca04eb1bf51fdd6a747f, type: 3}
+  dead: 0
 --- !u!1001 &1769768925
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9955,7 +10019,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1925024670
 MonoBehaviour:
   m_ObjectHideFlags: 0
