@@ -958,6 +958,7 @@ GameObject:
   m_Component:
   - component: {fileID: 233580287}
   - component: {fileID: 233580286}
+  - component: {fileID: 233580288}
   m_Layer: 0
   m_Name: "\u7DF4\u7FD2\u7528\u7269\u4EF6"
   m_TagString: Untagged
@@ -991,6 +992,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &233580288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233580285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e02d17c28e4f354eafe2c915b797c32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zombie: {fileID: 1734463683}
+  zombieTran: {fileID: 1734463686}
+  cam: {fileID: 607592521}
+  ps: {fileID: 1579797170}
 --- !u!1001 &347693585
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9670,8 +9687,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.06217146, y: -0.19781828}
-  m_Size: {x: 2.188757, y: 4.6235}
+  m_Offset: {x: -0.2, y: -1.35}
+  m_Size: {x: 1.8, y: 2.15}
   m_Direction: 0
 --- !u!114 &1734463689
 MonoBehaviour:
@@ -9693,6 +9710,7 @@ MonoBehaviour:
   soundSlide: {fileID: 0}
   soundHit: {fileID: 8300000, guid: 04100b428e78ca04eb1bf51fdd6a747f, type: 3}
   dead: 0
+  ani: {fileID: 1734463684}
 --- !u!1001 &1769768925
 PrefabInstance:
   m_ObjectHideFlags: 0
